@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Panel de Empresa</h2>
+<p>Bienvenido, {{ session.get('user_id') }}</p>
+<ul>
+    <li><a href="{{ url_for('crear_encuesta') }}">Crear Encuesta</a></li>
+    <li><a href="{{ url_for('gestionar_usuarios') }}">Gestionar Usuarios</a></li>
+    <li><a href="{{ url_for('ver_resultados') }}">Ver Resultados</a></li>
+</ul>
+{% endblock %}
