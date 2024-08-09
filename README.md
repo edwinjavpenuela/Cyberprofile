@@ -6,8 +6,8 @@ This program is a web-based application developed using Flask and MySQL, designe
 # Key Features:
 
 # User Registration and Authentication:
-Users can register as company users, with fields such as company name, username, password, and email.
-The login system includes a two-factor authentication process, sending a verification code to the user's registered email address.
+  Users can register as company users, with fields such as company name, username, password, and email.
+  The login system includes a two-factor authentication process, sending a verification code to the user's registered email address.
 
 # User Roles:
   SuperAdmin: This role includes a control panel to manage all user types, modify user roles, suspend users, and manage groups. It also includes an activity log to track user actions such as login, logout, and modifications.
