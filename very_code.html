@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Verificar Código</h2>
+<form method="POST">
+    <label for="codigo">Código de Verificación</label>
+    <input type="text" name="codigo" required>
+    <button type="submit">Verificar</button>
+</form>
+{% endblock %}
