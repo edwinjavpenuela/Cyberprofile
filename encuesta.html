@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Encuesta</h2>
+<form method="POST" action="{{ url_for('responder_encuesta') }}">
+    {% for pregunta in preguntas %}
+    <div>
+        <p>{{ pregunta.texto }}</p>
+        {% for respuesta in pregunta.respuestas %}
+        <label>
+            <input type="radio" name="respuesta_{{ pregunta.id }}" value="{{ respuesta.id }}" required>
+            {{ respuesta.texto }}
+        </label>
+        {% endfor %}
+    </div>
+    {% endfor %}
+    <button type="submit">Enviar Respuestas</button>
+</form>
+{% endblock %}
