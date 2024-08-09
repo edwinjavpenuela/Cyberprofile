@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Panel de SuperAdmin</h2>
+<p>Bienvenido, Administrador</p>
+<ul>
+    <li><a href="{{ url_for('crear_usuario') }}">Crear Usuario</a></li>
+    <li><a href="{{ url_for('gestionar_encuestas') }}">Gestionar Encuestas</a></li>
+    <li><a href="{{ url_for('ver_logs') }}">Ver Registro de Actividades</a></li>
+</ul>
+{% endblock %}
