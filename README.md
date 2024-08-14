@@ -1,5 +1,4 @@
-# Cyberprofile
-*Survey Cyberprofile Management Web Application*
+# Survey Cyberprofile Management Web Application
 This program is a web-based application developed using Flask and MySQL, designed to manage user roles and conduct surveys efficiently. It features a registration form and a login system with two-factor authentication to enhance security.
 
 
